@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Tailwind (Play CDN) -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -42,7 +41,7 @@
   body{font-family:'Inter', sans-serif; color:#14163a;}
   ::selection{background:#ff751f; color:#ffffff;}
 
-  /* ---------- Fio de conexão (elemento de assinatura) ---------- */
+ 
   #thread-svg{
     position:fixed;
     left:28px;
@@ -63,7 +62,7 @@
   .thread-node.active{fill:#ff751f; stroke:#ff751f; r:6;}
   @media (max-width: 991.98px){ #thread-svg{display:none;} }
 
-  /* ---------- Hero canvas ---------- */
+
   #network-canvas{
     position:absolute;
     inset:0;
@@ -72,14 +71,13 @@
     opacity:.65;
   }
 
-  /* ---------- Card de horário: hover troca fundo/textos ---------- */
   .schedule-card{ transition:background-color .25s, color .25s; }
   .schedule-card:hover{ background:#212974; }
   .schedule-card:hover .s-day,
   .schedule-card:hover .s-desc{ color:rgba(255,255,255,0.7); }
   .schedule-card:hover .s-time{ color:#ffa25c; }
 
-  /* ---------- Reveal on scroll ---------- */
+  
   .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
   .reveal.in{opacity:1; transform:translateY(0);}
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
@@ -89,11 +87,11 @@
 
 <svg id="thread-svg"></svg>
 
-<!-- NAVBAR -->
+
 <header class="fixed top-0 inset-x-0 z-50 bg-navy-dark/70 backdrop-blur-lg border-b border-white/10">
   <nav class="max-w-6xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
     <a href="#hero" class="font-display font-extrabold text-xl text-white tracking-tight">
-     <img src="img/logo.jpg" alt="" width="80px" height="80px">
+     CULTO <span class="text-orange">CONNECT</span>
     </a>
 
     <ul class="hidden lg:flex items-center gap-9">
@@ -173,7 +171,7 @@
   </div>
 </section>
 
-<!-- HORÁRIOS -->
+
 <section id="horarios" data-node="Horários" class="py-28 bg-cream">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="reveal max-w-xl mb-16">
@@ -186,15 +184,15 @@
       </p>
     </div>
 
-    <div class="reveal grid md:grid-cols-3 gap-px bg-navy/10 border border-navy/10 rounded-2xl overflow-hidden">
+  <div class="reveal grid md:grid-cols-4 gap-px bg-navy/10 border border-navy/10 rounded-2xl overflow-hidden">
       <div class="schedule-card bg-white p-9">
         <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Domingo · Manhã</div>
-        <div class="s-time font-display text-4xl font-bold text-navy my-3">09h30</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">08h30</div>
         <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Culto de celebração em família, com ministração e louvor ao vivo.</div>
       </div>
       <div class="schedule-card bg-white p-9">
         <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Domingo · Noite</div>
-        <div class="s-time font-display text-4xl font-bold text-navy my-3">18h30</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">19h00</div>
         <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Culto Connect Jovem — energia, música e uma palavra direta pra vida real.</div>
       </div>
       <div class="schedule-card bg-white p-9">
@@ -202,11 +200,17 @@
         <div class="s-time font-display text-4xl font-bold text-navy my-3">20h00</div>
         <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Noite de oração e estudo da Palavra, em formato intimista.</div>
       </div>
+      <div class="schedule-card bg-white p-9">
+        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Sexta-feira · Noite</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">20h00</div>
+        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Encontro de jovens, com leitura da Palavra e adoração.</div>
+      </div>
     </div>
+    
   </div>
 </section>
 
-<!-- SOBRE -->
+
 <section id="sobre" class="py-28">
   <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
     <div class="reveal aspect-square rounded-3xl bg-navy overflow-hidden relative">
@@ -274,13 +278,13 @@
         Transmissão ao vivo todo domingo, com chat aberto pra você orar e interagir com a igreja em tempo real.
       </p>
     </div>
-    <a href="#" class="inline-flex items-center gap-2 rounded-full bg-white text-orange font-bold px-8 py-4 hover:-translate-y-0.5 transition whitespace-nowrap">
+    <a href="https://www.youtube.com/c/PIBEmSaracuruna" class="inline-flex items-center gap-2 rounded-full bg-white text-orange font-bold px-8 py-4 hover:-translate-y-0.5 transition whitespace-nowrap">
       ▶ Assistir agora
     </a>
   </div>
 </section>
 
-<!-- LOCALIZAÇÃO -->
+
 <section id="local" data-node="Local" class="py-28 bg-navy-dark">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="reveal max-w-xl mb-16">
@@ -297,21 +301,21 @@
           <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">📍</div>
           <div>
             <b class="block text-white text-sm">Endereço</b>
-            <span class="text-white/55 text-[13.5px]">Av. das Conexões, 212 — Centro</span>
+            <span class="text-white/55 text-[13.5px]">Av. Barão do Rio Branco 526 Saracuruna, D.Caxias</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
           <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">🕒</div>
           <div>
             <b class="block text-white text-sm">Atendimento</b>
-            <span class="text-white/55 text-[13.5px]">Ter a Sex, 9h–18h · Recepção aberta em dias de culto</span>
+            <span class="text-white/55 text-[13.5px]">Fernado - (21) 999574-2765</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
           <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">✉️</div>
           <div>
             <b class="block text-white text-sm">Contato</b>
-            <span class="text-white/55 text-[13.5px]">ola@cultoconnect.com.br</span>
+            <span class="text-white/55 text-[13.5px]">Pibsconnect@gmail.com</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
@@ -341,7 +345,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+
 <footer class="bg-navy-dark border-t border-white/10 pt-14 pb-9">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="flex flex-wrap justify-between items-start gap-8 pb-9 border-b border-white/10">
@@ -363,12 +367,11 @@
 </footer>
 
 <script>
-// ---------- Menu mobile ----------
+
 document.getElementById('menuBtn').addEventListener('click', () => {
   document.getElementById('mobileMenu').classList.toggle('hidden');
 });
 
-// ---------- Hero network canvas ----------
 (function(){
   const canvas = document.getElementById('network-canvas');
   const ctx = canvas.getContext('2d');
@@ -430,7 +433,7 @@ document.getElementById('menuBtn').addEventListener('click', () => {
   start();
 })();
 
-// ---------- Fio de conexão ----------
+
 (function(){
   const svg = document.getElementById('thread-svg');
   const sections = document.querySelectorAll('[data-node]');
@@ -482,7 +485,7 @@ document.getElementById('menuBtn').addEventListener('click', () => {
   updateFill();
 })();
 
-// ---------- Reveal on scroll ----------
+
 (function(){
   const items = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
