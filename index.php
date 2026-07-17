@@ -331,8 +331,8 @@
                     </div>
                     <div class="border-l-[3px] border-orange pl-4">
                         <b class="block font-display text-navy text-base">Comunidade</b>
-                        <span class="text-[#6a6e9c] text-[13.5px] leading-relaxed">Células e grupos pequenos espalhados
-                            pela cidade.</span>
+                        <span class="text-[#6a6e9c] text-[13.5px] leading-relaxed">Grupos pequenos
+                            de estudo e adoração.</span>
                     </div>
                     <div class="border-l-[3px] border-orange pl-4">
                         <b class="block font-display text-navy text-base">Online</b>
