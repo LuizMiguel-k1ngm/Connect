@@ -250,9 +250,7 @@
                 <h2 class="font-display font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
                     Escolha o culto que combina com sua semana.
                 </h2>
-                <p class="mt-4 text-[#54588a] text-lg leading-relaxed">
-                    Presencial no templo ou ao vivo pelo youtube — a conexão é a mesma.
-                </p>
+
             </div>
 
             <div
