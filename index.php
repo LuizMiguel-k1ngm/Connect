@@ -100,7 +100,7 @@ tailwind.config = {
 <header class="fixed top-0 inset-x-0 z-50 bg-navy-dark/70 backdrop-blur-lg border-b border-white/10">
   <nav class="max-w-6xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
     <a href="#hero" class="font-display font-extrabold text-xl text-white tracking-tight">
-     CULTO <span class="text-orange">CONNECT</span>
+     CULTO<span class="text-orange">CONNECT</span>
     </a>
 
     <ul class="hidden lg:flex items-center gap-9">
@@ -115,7 +115,7 @@ tailwind.config = {
       Assista ao vivo
     </a>
 
-    <!-- botão mobile -->
+  
     <button id="menuBtn" class="lg:hidden text-white" aria-label="Abrir menu">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -123,7 +123,7 @@ tailwind.config = {
     </button>
   </nav>
 
-  <!-- menu mobile -->
+  
   <div id="mobileMenu" class="hidden lg:hidden bg-navy-dark border-t border-white/10 px-6 py-5 flex flex-col gap-4">
     <a href="#hero" class="text-white/80 text-sm font-medium">Início</a>
     <a href="#horarios" class="text-white/80 text-sm font-medium">Horários</a>
@@ -134,7 +134,7 @@ tailwind.config = {
   </div>
 </header>
 
-<!-- HERO -->
+
 <section id="hero" data-node="Início" class="relative min-h-screen flex items-center pt-28 overflow-hidden bg-[radial-gradient(120%_100%_at_15%_0%,_#37409e_0%,_#212974_45%,_#12153f_100%)]">
   <canvas id="network-canvas"></canvas>
 
@@ -161,20 +161,7 @@ tailwind.config = {
           Assistir ao vivo
         </a>
       </div>
-
-      <div class="mt-16 pt-7 border-t border-white/10 flex flex-wrap gap-12">
-        <div>
-          <b class="block font-display text-2xl font-bold text-white">3x</b>
-          <span class="text-white/50 text-[13px]">Cultos por semana</span>
-        </div>
-        <div>
-          <b class="block font-display text-2xl font-bold text-white">+40</b>
-          <span class="text-white/50 text-[13px]">Cidades assistindo online</span>
-        </div>
-        <div>
-          <b class="block font-display text-2xl font-bold text-white">100%</b>
-          <span class="text-white/50 text-[13px]">Gratuito e aberto a todos</span>
-        </div>
+      
       </div>
     </div>
   </div>
@@ -189,34 +176,32 @@ tailwind.config = {
         Escolha o culto que combina com sua semana.
       </h2>
       <p class="mt-4 text-[#54588a] text-lg leading-relaxed">
-        Presencial no templo ou ao vivo pelo app — a conexão é a mesma.
+        Presencial no templo ou ao vivo pelo youtube — a conexão é a mesma.
       </p>
     </div>
 
-  <div class="reveal grid md:grid-cols-4 gap-px bg-navy/10 border border-navy/10 rounded-2xl overflow-hidden">
+<div class="reveal grid md:grid-cols-4 border border-navy/10 rounded-2xl overflow-hidden divide-x divide-navy/10">
       <div class="schedule-card bg-white p-9">
-        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Domingo · Manhã</div>
+        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Quarta · Noite</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">19h30</div>
+        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">PG dos Adolescentes, encontro marcado toda quarta-feira do mês.</div>
+      </div>
+      <div class="schedule-card bg-white p-9">
+        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Sexta · Noite</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">19h30</div>
+        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">PG dos Adolescentes, encontro marcado toda sexta-feira do mês</div>
+      </div>
+      <div class="schedule-card bg-white p-9">
+        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Domingo . Manhã</div>
         <div class="s-time font-display text-4xl font-bold text-navy my-3">08h30</div>
-        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Culto de celebração em família, com ministração e louvor ao vivo.</div>
+        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Culto Connect, acontece todo segundo domingo de cada mês</div>
       </div>
       <div class="schedule-card bg-white p-9">
         <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Domingo · Noite</div>
-        <div class="s-time font-display text-4xl font-bold text-navy my-3">19h00</div>
-        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Culto Connect Jovem — energia, música e uma palavra direta pra vida real.</div>
-      </div>
-      <div class="schedule-card bg-white p-9">
-        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Quarta-feira</div>
-        <div class="s-time font-display text-4xl font-bold text-navy my-3">20h00</div>
-        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Noite de oração e estudo da Palavra, em formato intimista.</div>
-      </div>
-      <div class="schedule-card bg-white p-9">
-        <div class="s-day text-[13px] font-bold uppercase tracking-wider text-navy-light">Sexta-feira · Noite</div>
-        <div class="s-time font-display text-4xl font-bold text-navy my-3">20h00</div>
-        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Encontro de jovens, com leitura da Palavra e adoração.</div>
+        <div class="s-time font-display text-4xl font-bold text-navy my-3">19h30</div>
+        <div class="s-desc text-[#6a6e9c] text-sm leading-relaxed">Copa Connect, toda última sexta-feira de cada mês</div>
       </div>
     </div>
-    
-  </div>
 </section>
 
 
@@ -273,7 +258,7 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- AO VIVO -->
+
 <section id="aovivo" data-node="Ao vivo" class="relative overflow-hidden py-24 bg-gradient-to-br from-orange to-[#ff8c42]">
   <div class="absolute -right-10 -top-10 w-72 h-72 rounded-full border border-white/35"></div>
   <div class="absolute -right-32 -top-32 w-[420px] h-[420px] rounded-full border border-white/25"></div>
@@ -321,7 +306,7 @@ tailwind.config = {
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
-          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-regular fa-envelope text-white"></i></div>
+          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-solid fa-at text-white"></i></i></div>
           <div>
             <b class="block text-white text-sm">Contato</b>
             <span class="text-white/55 text-[13.5px]">Pibsconnect@gmail.com</span>
@@ -363,14 +348,14 @@ tailwind.config = {
         <p class="text-white/50 text-sm mt-2 max-w-xs leading-relaxed">Fé que conecta pessoas — presencial ou de onde você estiver.</p>
       </div>
       <div class="flex gap-3">
-        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition">IG</a>
-        <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition">YT</a>
-        <a href="#" aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition">WA</a>
+        <a href="https://www.instagram.com/pib.saracuruna/" aria-label="Instagram" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/PIBEmSaracuruna" aria-label="YouTube" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange hover:border-orange transition"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
     <div class="pt-6 flex flex-wrap justify-between gap-2 text-white/40 text-[13px]">
       <span>© 2026 Culto Connect. Todos os direitos reservados.</span>
-      <span>Av. das Conexões, 212 — Centro</span>
+      <span>Av. Barão do Rio Branco 526 Saracuruna, D.Caxias</span>
     </div>
   </div>
 </footer>
