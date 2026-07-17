@@ -5,35 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Culto Connect</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          navy: {
-            DEFAULT: '#212974',
-            dark: '#12153f',
-            light: '#37409e',
-          },
-          orange: {
-            DEFAULT: '#ff751f',
-            light: '#ffa25c',
-          },
-          cream: '#fff7f1',
-          ink: '#14163a',
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: {
+          DEFAULT: '#212974',
+          dark: '#12153f',
+          light: '#37409e',
         },
-        fontFamily: {
-          display: ['"Bricolage Grotesque"', 'sans-serif'],
-          body: ['Inter', 'sans-serif'],
+        orange: {
+          DEFAULT: '#ff751f',
+          light: '#ffa25c',
         },
-      }
+        cream: '#fff7f1',
+        ink: '#14163a',
+        whatsapp: {
+          DEFAULT: '#25D366',
+          dark: '#128C7E',
+        },
+        address: {
+          DEFAULT: '#e53e3e',
+          dark: '#c53030',
+        },
+      },
+      fontFamily: {
+        display: ['"Bricolage Grotesque"', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
     }
   }
+}
 </script>
 
 <style>
@@ -298,28 +307,28 @@
         <h3 class="text-white text-xl font-display font-bold mb-6">Templo Culto Connect</h3>
 
         <div class="flex gap-4 py-4">
-          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">📍</div>
+          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-solid fa-location-dot text-address"></i></div>
           <div>
             <b class="block text-white text-sm">Endereço</b>
             <span class="text-white/55 text-[13.5px]">Av. Barão do Rio Branco 526 Saracuruna, D.Caxias</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
-          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">🕒</div>
+          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-brands fa-whatsapp text-whatsapp"></i></div>
           <div>
             <b class="block text-white text-sm">Atendimento</b>
             <span class="text-white/55 text-[13.5px]">Fernado - (21) 999574-2765</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
-          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">✉️</div>
+          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-regular fa-envelope text-white"></i></div>
           <div>
             <b class="block text-white text-sm">Contato</b>
             <span class="text-white/55 text-[13.5px]">Pibsconnect@gmail.com</span>
           </div>
         </div>
         <div class="flex gap-4 py-4 border-t border-white/10">
-          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0">🚗</div>
+          <div class="w-9 h-9 rounded-[10px] bg-orange/20 flex items-center justify-center shrink-0"><i class="fa-solid fa-car-side text-orange"></i></div>
           <div>
             <b class="block text-white text-sm">Estacionamento</b>
             <span class="text-white/55 text-[13.5px]">Gratuito para membros e visitantes</span>
