@@ -15,4 +15,4 @@ A interface foi desenvolvida com foco em simplicidade, responsividade e uma expe
 
 ---
 
-## LINK :  [https://luizmiguel-k1ngm.github.io/Connect/](https://pibconnect.com.br/)
+## LINK : https://pibconnect.com.br/
